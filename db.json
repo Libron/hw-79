@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "name": "Category 4",
+      "description": " Fourth Location Description",
+      "id": "z0ZndrR-VUfKlpsrA4Aq5"
+    },
+    {
+      "name": "Category 2",
+      "description": " Fourth Location Description",
+      "id": "XXR6DJ0MZPuZVJkY3LviM"
+    },
+    {
+      "name": "Category 1",
+      "description": " Fourth Location Description",
+      "id": "cnTtf8G6clpswNgTqZ9Q4"
+    }
+  ],
+  "locations": [
+    {
+      "name": "First location",
+      "description": "New Location Description",
+      "id": "hKHWtGAOuJv1_yGH5X2ME"
+    },
+    {
+      "name": "Second location",
+      "description": "Location Description",
+      "id": "jGOLrAlnd9Gth3SHLszmo"
+    },
+    {
+      "name": "Third location",
+      "description": " Third Location Description",
+      "id": "uWb7gdOKHYPGo669Kg8KQ"
+    },
+    {
+      "name": "Fourth location",
+      "description": " Fourth Location Description",
+      "id": "MzSwBBsksX02rPaaq4R8M"
+    }
+  ],
+  "items": [
+    {
+      "name": "Video",
+      "description": "Some descriptiom",
+      "id": "amPVD46dbKBqUpdJ8Vbp4",
+      "categoryId": null,
+      "locationId": null,
+      "image": "iR9eQqhJ_nlzONewwUlap.png"
+    },
+    {
+      "name": "Computer",
+      "description": "Some descriptiom",
+      "locationId": "uWb7gdOKHYPGo669Kg8KQ",
+      "categoryId": "z0ZndrR-VUfKlpsrA4Aq5",
+      "id": "-wDPcgBHVPyxNEvosXcS9",
+      "image": "YVBhgH32S4Npfz8fBbXHr.png"
+    }
+  ]
+}
