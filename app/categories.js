@@ -9,18 +9,20 @@ router.get('/', (req, res) => {
     res.send(db.getItems(CATEGORIES));
 });
 
+router.get('/:id', (req, res) => {
+    res.send(db.getItems(CATEGORIES).find(category => category.id === req.params.id));
+});
+
 router.post('/', (req, res) => {
     const category = req.body;
-    category.id = nanoid();
 
-    db.addItem(CATEGORIES ,category);
-    res.send(category);
-
-    // {
-    //     id: 'catId',
-    //     name: 'catName',
-    //     description: 'catDesc'
-    // }
+    if (!category.name) {
+        res.status(400).send('Missing required fields, please check');
+    } else {
+        category.id = nanoid();
+        db.addItem(CATEGORIES ,category);
+        res.send({id: category.id, name: category.name});
+    }
 });
 
 router.delete('/:id', (req, res) => {
